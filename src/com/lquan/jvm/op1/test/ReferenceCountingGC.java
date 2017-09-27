@@ -15,6 +15,7 @@ public class ReferenceCountingGC {
 	
 	/**
 	 * 这个成员属性的唯一一一就是占点内存，以便能在GC日志中看清是否被回收过
+	 * -XX:+PrintGCDetails
 	 */
 	private byte[] bigSize = new byte[2*_1MB];
 	
